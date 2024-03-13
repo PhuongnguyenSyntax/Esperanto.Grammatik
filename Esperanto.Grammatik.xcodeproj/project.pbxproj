@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62D87E302BA0F367000AFB5F /* Esperanto_GrammatikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E2F2BA0F367000AFB5F /* Esperanto_GrammatikApp.swift */; };
+		62D87E322BA0F367000AFB5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E312BA0F367000AFB5F /* ContentView.swift */; };
+		62D87E342BA0F369000AFB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D87E332BA0F369000AFB5F /* Assets.xcassets */; };
+		62D87E372BA0F369000AFB5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D87E362BA0F369000AFB5F /* Preview Assets.xcassets */; };
+		62D87E412BA0F369000AFB5F /* Esperanto_GrammatikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E402BA0F369000AFB5F /* Esperanto_GrammatikTests.swift */; };
+		62D87E4B2BA0F369000AFB5F /* Esperanto_GrammatikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E4A2BA0F369000AFB5F /* Esperanto_GrammatikUITests.swift */; };
+		62D87E4D2BA0F369000AFB5F /* Esperanto_GrammatikUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E4C2BA0F369000AFB5F /* Esperanto_GrammatikUITestsLaunchTests.swift */; };
+		62D87E5A2BA0F3A0000AFB5F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E592BA0F3A0000AFB5F /* Home.swift */; };
+		62D87E5C2BA0FC33000AFB5F /* WortbildungView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E5B2BA0FC33000AFB5F /* WortbildungView.swift */; };
+		62D87E612BA0FC8E000AFB5F /* VorsilbenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E602BA0FC8E000AFB5F /* VorsilbenView.swift */; };
+		62D87E632BA0FC9A000AFB5F /* NachsilbenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E622BA0FC9A000AFB5F /* NachsilbenView.swift */; };
+		62D87E652BA0FCBA000AFB5F /* KorrelativePronomenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E642BA0FCBA000AFB5F /* KorrelativePronomenView.swift */; };
+		62D87E672BA0FD03000AFB5F /* ZusammengesetzteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E662BA0FD03000AFB5F /* ZusammengesetzteView.swift */; };
+		62D87E6C2BA0FFCC000AFB5F /* Aussprache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E6B2BA0FFCC000AFB5F /* Aussprache.swift */; };
+		62D87E6F2BA10052000AFB5F /* Artikel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E6E2BA10052000AFB5F /* Artikel.swift */; };
+		62D87E712BA1006C000AFB5F /* SubtantiveUndAdjektive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E702BA1006C000AFB5F /* SubtantiveUndAdjektive.swift */; };
+		62D87E732BA10078000AFB5F /* Adverbien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E722BA10078000AFB5F /* Adverbien.swift */; };
+		62D87E752BA10087000AFB5F /* Pronomina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E742BA10087000AFB5F /* Pronomina.swift */; };
+		62D87E772BA10093000AFB5F /* Verben.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E762BA10093000AFB5F /* Verben.swift */; };
+		62D87E7B2BA100B5000AFB5F /* Präpositionen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E7A2BA100B5000AFB5F /* Präpositionen.swift */; };
+		62D87E7D2BA100C5000AFB5F /* Konjunktionen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E7C2BA100C5000AFB5F /* Konjunktionen.swift */; };
+		62D87E812BA100F2000AFB5F /* Frage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E802BA100F2000AFB5F /* Frage.swift */; };
+		62D87E832BA100FF000AFB5F /* Wortfolge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E822BA100FF000AFB5F /* Wortfolge.swift */; };
+		62D87E852BA103F0000AFB5F /* Zahlwort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E842BA103F0000AFB5F /* Zahlwort.swift */; };
+		62D87E872BA261F9000AFB5F /* testUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E862BA261F9000AFB5F /* testUI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62D87E3D2BA0F369000AFB5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62D87E242BA0F367000AFB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62D87E2B2BA0F367000AFB5F;
+			remoteInfo = Esperanto.Grammatik;
+		};
+		62D87E472BA0F369000AFB5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62D87E242BA0F367000AFB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62D87E2B2BA0F367000AFB5F;
+			remoteInfo = Esperanto.Grammatik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62D87E2C2BA0F367000AFB5F /* Esperanto.Grammatik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esperanto.Grammatik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D87E2F2BA0F367000AFB5F /* Esperanto_GrammatikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esperanto_GrammatikApp.swift; sourceTree = "<group>"; };
+		62D87E312BA0F367000AFB5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62D87E332BA0F369000AFB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62D87E362BA0F369000AFB5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62D87E3C2BA0F369000AFB5F /* Esperanto.GrammatikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esperanto.GrammatikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D87E402BA0F369000AFB5F /* Esperanto_GrammatikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esperanto_GrammatikTests.swift; sourceTree = "<group>"; };
+		62D87E462BA0F369000AFB5F /* Esperanto.GrammatikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esperanto.GrammatikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D87E4A2BA0F369000AFB5F /* Esperanto_GrammatikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esperanto_GrammatikUITests.swift; sourceTree = "<group>"; };
+		62D87E4C2BA0F369000AFB5F /* Esperanto_GrammatikUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esperanto_GrammatikUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62D87E592BA0F3A0000AFB5F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		62D87E5B2BA0FC33000AFB5F /* WortbildungView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WortbildungView.swift; sourceTree = "<group>"; };
+		62D87E602BA0FC8E000AFB5F /* VorsilbenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorsilbenView.swift; sourceTree = "<group>"; };
+		62D87E622BA0FC9A000AFB5F /* NachsilbenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NachsilbenView.swift; sourceTree = "<group>"; };
+		62D87E642BA0FCBA000AFB5F /* KorrelativePronomenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorrelativePronomenView.swift; sourceTree = "<group>"; };
+		62D87E662BA0FD03000AFB5F /* ZusammengesetzteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZusammengesetzteView.swift; sourceTree = "<group>"; };
+		62D87E6B2BA0FFCC000AFB5F /* Aussprache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aussprache.swift; sourceTree = "<group>"; };
+		62D87E6E2BA10052000AFB5F /* Artikel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artikel.swift; sourceTree = "<group>"; };
+		62D87E702BA1006C000AFB5F /* SubtantiveUndAdjektive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtantiveUndAdjektive.swift; sourceTree = "<group>"; };
+		62D87E722BA10078000AFB5F /* Adverbien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adverbien.swift; sourceTree = "<group>"; };
+		62D87E742BA10087000AFB5F /* Pronomina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pronomina.swift; sourceTree = "<group>"; };
+		62D87E762BA10093000AFB5F /* Verben.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verben.swift; sourceTree = "<group>"; };
+		62D87E7A2BA100B5000AFB5F /* Präpositionen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Präpositionen.swift"; sourceTree = "<group>"; };
+		62D87E7C2BA100C5000AFB5F /* Konjunktionen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Konjunktionen.swift; sourceTree = "<group>"; };
+		62D87E802BA100F2000AFB5F /* Frage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frage.swift; sourceTree = "<group>"; };
+		62D87E822BA100FF000AFB5F /* Wortfolge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wortfolge.swift; sourceTree = "<group>"; };
+		62D87E842BA103F0000AFB5F /* Zahlwort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zahlwort.swift; sourceTree = "<group>"; };
+		62D87E862BA261F9000AFB5F /* testUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62D87E292BA0F367000AFB5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D87E392BA0F369000AFB5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D87E432BA0F369000AFB5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62D87E232BA0F367000AFB5F = {
+			isa = PBXGroup;
+			children = (
+				62D87E2E2BA0F367000AFB5F /* Esperanto.Grammatik */,
+				62D87E3F2BA0F369000AFB5F /* Esperanto.GrammatikTests */,
+				62D87E492BA0F369000AFB5F /* Esperanto.GrammatikUITests */,
+				62D87E2D2BA0F367000AFB5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62D87E2D2BA0F367000AFB5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E2C2BA0F367000AFB5F /* Esperanto.Grammatik.app */,
+				62D87E3C2BA0F369000AFB5F /* Esperanto.GrammatikTests.xctest */,
+				62D87E462BA0F369000AFB5F /* Esperanto.GrammatikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62D87E2E2BA0F367000AFB5F /* Esperanto.Grammatik */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E682BA0FF9B000AFB5F /* Aussprache */,
+				62D87E5D2BA0FC41000AFB5F /* WortBildung */,
+				62D87E6D2BA1003D000AFB5F /* Wortarten */,
+				62D87E6A2BA0FFB5000AFB5F /* Satzbildung */,
+				62D87E592BA0F3A0000AFB5F /* Home.swift */,
+				62D87E2F2BA0F367000AFB5F /* Esperanto_GrammatikApp.swift */,
+				62D87E312BA0F367000AFB5F /* ContentView.swift */,
+				62D87E332BA0F369000AFB5F /* Assets.xcassets */,
+				62D87E352BA0F369000AFB5F /* Preview Content */,
+			);
+			path = Esperanto.Grammatik;
+			sourceTree = "<group>";
+		};
+		62D87E352BA0F369000AFB5F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E362BA0F369000AFB5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62D87E3F2BA0F369000AFB5F /* Esperanto.GrammatikTests */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E402BA0F369000AFB5F /* Esperanto_GrammatikTests.swift */,
+			);
+			path = Esperanto.GrammatikTests;
+			sourceTree = "<group>";
+		};
+		62D87E492BA0F369000AFB5F /* Esperanto.GrammatikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E4A2BA0F369000AFB5F /* Esperanto_GrammatikUITests.swift */,
+				62D87E4C2BA0F369000AFB5F /* Esperanto_GrammatikUITestsLaunchTests.swift */,
+			);
+			path = Esperanto.GrammatikUITests;
+			sourceTree = "<group>";
+		};
+		62D87E5D2BA0FC41000AFB5F /* WortBildung */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E5B2BA0FC33000AFB5F /* WortbildungView.swift */,
+				62D87E602BA0FC8E000AFB5F /* VorsilbenView.swift */,
+				62D87E662BA0FD03000AFB5F /* ZusammengesetzteView.swift */,
+				62D87E622BA0FC9A000AFB5F /* NachsilbenView.swift */,
+				62D87E642BA0FCBA000AFB5F /* KorrelativePronomenView.swift */,
+			);
+			path = WortBildung;
+			sourceTree = "<group>";
+		};
+		62D87E682BA0FF9B000AFB5F /* Aussprache */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E6B2BA0FFCC000AFB5F /* Aussprache.swift */,
+				62D87E862BA261F9000AFB5F /* testUI.swift */,
+			);
+			path = Aussprache;
+			sourceTree = "<group>";
+		};
+		62D87E6A2BA0FFB5000AFB5F /* Satzbildung */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E802BA100F2000AFB5F /* Frage.swift */,
+				62D87E822BA100FF000AFB5F /* Wortfolge.swift */,
+			);
+			path = Satzbildung;
+			sourceTree = "<group>";
+		};
+		62D87E6D2BA1003D000AFB5F /* Wortarten */ = {
+			isa = PBXGroup;
+			children = (
+				62D87E6E2BA10052000AFB5F /* Artikel.swift */,
+				62D87E702BA1006C000AFB5F /* SubtantiveUndAdjektive.swift */,
+				62D87E722BA10078000AFB5F /* Adverbien.swift */,
+				62D87E742BA10087000AFB5F /* Pronomina.swift */,
+				62D87E762BA10093000AFB5F /* Verben.swift */,
+				62D87E7A2BA100B5000AFB5F /* Präpositionen.swift */,
+				62D87E7C2BA100C5000AFB5F /* Konjunktionen.swift */,
+				62D87E842BA103F0000AFB5F /* Zahlwort.swift */,
+			);
+			path = Wortarten;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62D87E2B2BA0F367000AFB5F /* Esperanto.Grammatik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62D87E502BA0F369000AFB5F /* Build configuration list for PBXNativeTarget "Esperanto.Grammatik" */;
+			buildPhases = (
+				62D87E282BA0F367000AFB5F /* Sources */,
+				62D87E292BA0F367000AFB5F /* Frameworks */,
+				62D87E2A2BA0F367000AFB5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Esperanto.Grammatik;
+			productName = Esperanto.Grammatik;
+			productReference = 62D87E2C2BA0F367000AFB5F /* Esperanto.Grammatik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62D87E3B2BA0F369000AFB5F /* Esperanto.GrammatikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62D87E532BA0F369000AFB5F /* Build configuration list for PBXNativeTarget "Esperanto.GrammatikTests" */;
+			buildPhases = (
+				62D87E382BA0F369000AFB5F /* Sources */,
+				62D87E392BA0F369000AFB5F /* Frameworks */,
+				62D87E3A2BA0F369000AFB5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62D87E3E2BA0F369000AFB5F /* PBXTargetDependency */,
+			);
+			name = Esperanto.GrammatikTests;
+			productName = Esperanto.GrammatikTests;
+			productReference = 62D87E3C2BA0F369000AFB5F /* Esperanto.GrammatikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62D87E452BA0F369000AFB5F /* Esperanto.GrammatikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62D87E562BA0F369000AFB5F /* Build configuration list for PBXNativeTarget "Esperanto.GrammatikUITests" */;
+			buildPhases = (
+				62D87E422BA0F369000AFB5F /* Sources */,
+				62D87E432BA0F369000AFB5F /* Frameworks */,
+				62D87E442BA0F369000AFB5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62D87E482BA0F369000AFB5F /* PBXTargetDependency */,
+			);
+			name = Esperanto.GrammatikUITests;
+			productName = Esperanto.GrammatikUITests;
+			productReference = 62D87E462BA0F369000AFB5F /* Esperanto.GrammatikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62D87E242BA0F367000AFB5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					62D87E2B2BA0F367000AFB5F = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					62D87E3B2BA0F369000AFB5F = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 62D87E2B2BA0F367000AFB5F;
+					};
+					62D87E452BA0F369000AFB5F = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 62D87E2B2BA0F367000AFB5F;
+					};
+				};
+			};
+			buildConfigurationList = 62D87E272BA0F367000AFB5F /* Build configuration list for PBXProject "Esperanto.Grammatik" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62D87E232BA0F367000AFB5F;
+			productRefGroup = 62D87E2D2BA0F367000AFB5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62D87E2B2BA0F367000AFB5F /* Esperanto.Grammatik */,
+				62D87E3B2BA0F369000AFB5F /* Esperanto.GrammatikTests */,
+				62D87E452BA0F369000AFB5F /* Esperanto.GrammatikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62D87E2A2BA0F367000AFB5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D87E372BA0F369000AFB5F /* Preview Assets.xcassets in Resources */,
+				62D87E342BA0F369000AFB5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D87E3A2BA0F369000AFB5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D87E442BA0F369000AFB5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62D87E282BA0F367000AFB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D87E852BA103F0000AFB5F /* Zahlwort.swift in Sources */,
+				62D87E872BA261F9000AFB5F /* testUI.swift in Sources */,
+				62D87E5C2BA0FC33000AFB5F /* WortbildungView.swift in Sources */,
+				62D87E6C2BA0FFCC000AFB5F /* Aussprache.swift in Sources */,
+				62D87E7B2BA100B5000AFB5F /* Präpositionen.swift in Sources */,
+				62D87E752BA10087000AFB5F /* Pronomina.swift in Sources */,
+				62D87E772BA10093000AFB5F /* Verben.swift in Sources */,
+				62D87E652BA0FCBA000AFB5F /* KorrelativePronomenView.swift in Sources */,
+				62D87E612BA0FC8E000AFB5F /* VorsilbenView.swift in Sources */,
+				62D87E812BA100F2000AFB5F /* Frage.swift in Sources */,
+				62D87E672BA0FD03000AFB5F /* ZusammengesetzteView.swift in Sources */,
+				62D87E712BA1006C000AFB5F /* SubtantiveUndAdjektive.swift in Sources */,
+				62D87E322BA0F367000AFB5F /* ContentView.swift in Sources */,
+				62D87E6F2BA10052000AFB5F /* Artikel.swift in Sources */,
+				62D87E7D2BA100C5000AFB5F /* Konjunktionen.swift in Sources */,
+				62D87E5A2BA0F3A0000AFB5F /* Home.swift in Sources */,
+				62D87E832BA100FF000AFB5F /* Wortfolge.swift in Sources */,
+				62D87E632BA0FC9A000AFB5F /* NachsilbenView.swift in Sources */,
+				62D87E732BA10078000AFB5F /* Adverbien.swift in Sources */,
+				62D87E302BA0F367000AFB5F /* Esperanto_GrammatikApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D87E382BA0F369000AFB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D87E412BA0F369000AFB5F /* Esperanto_GrammatikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D87E422BA0F369000AFB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D87E4D2BA0F369000AFB5F /* Esperanto_GrammatikUITestsLaunchTests.swift in Sources */,
+				62D87E4B2BA0F369000AFB5F /* Esperanto_GrammatikUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62D87E3E2BA0F369000AFB5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62D87E2B2BA0F367000AFB5F /* Esperanto.Grammatik */;
+			targetProxy = 62D87E3D2BA0F369000AFB5F /* PBXContainerItemProxy */;
+		};
+		62D87E482BA0F369000AFB5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62D87E2B2BA0F367000AFB5F /* Esperanto.Grammatik */;
+			targetProxy = 62D87E472BA0F369000AFB5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		62D87E4E2BA0F369000AFB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62D87E4F2BA0F369000AFB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62D87E512BA0F369000AFB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Esperanto.Grammatik/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Syntax.Esperanto-Grammatik";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62D87E522BA0F369000AFB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Esperanto.Grammatik/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Syntax.Esperanto-Grammatik";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62D87E542BA0F369000AFB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Syntax.Esperanto-GrammatikTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esperanto.Grammatik.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Esperanto.Grammatik";
+			};
+			name = Debug;
+		};
+		62D87E552BA0F369000AFB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Syntax.Esperanto-GrammatikTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esperanto.Grammatik.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Esperanto.Grammatik";
+			};
+			name = Release;
+		};
+		62D87E572BA0F369000AFB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Syntax.Esperanto-GrammatikUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Esperanto.Grammatik;
+			};
+			name = Debug;
+		};
+		62D87E582BA0F369000AFB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Syntax.Esperanto-GrammatikUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Esperanto.Grammatik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62D87E272BA0F367000AFB5F /* Build configuration list for PBXProject "Esperanto.Grammatik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D87E4E2BA0F369000AFB5F /* Debug */,
+				62D87E4F2BA0F369000AFB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62D87E502BA0F369000AFB5F /* Build configuration list for PBXNativeTarget "Esperanto.Grammatik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D87E512BA0F369000AFB5F /* Debug */,
+				62D87E522BA0F369000AFB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62D87E532BA0F369000AFB5F /* Build configuration list for PBXNativeTarget "Esperanto.GrammatikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D87E542BA0F369000AFB5F /* Debug */,
+				62D87E552BA0F369000AFB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62D87E562BA0F369000AFB5F /* Build configuration list for PBXNativeTarget "Esperanto.GrammatikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D87E572BA0F369000AFB5F /* Debug */,
+				62D87E582BA0F369000AFB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62D87E242BA0F367000AFB5F /* Project object */;
+}

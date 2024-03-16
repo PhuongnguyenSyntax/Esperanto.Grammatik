@@ -11,7 +11,22 @@ import SwiftUI
 
 struct Artikel: View {
     var body: some View {
-        Text("Hallo")
+        VStack {
+            Text("La =  der, die, das. Es gibt keinen unbestimmten Artikel.")
+                .font(.system(size: 16))
+                .fontWeight(.medium)
+                .padding(.bottom, 2)
+       
+        }
+        .padding()
+        .background(Color.eo)
+        
+        .border(Color.black, width: 2)
+        .cornerRadius(5)
+        .padding()
+        .navigationTitle("Artikel")
+        .navigationBarTitleDisplayMode(.inline)
+        Spacer()
     }
 }
 

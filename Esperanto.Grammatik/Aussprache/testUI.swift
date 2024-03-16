@@ -52,7 +52,7 @@ struct Aussprache1: View {
                     HStack {
                         Text(word.0)
                             .frame(width: 40, alignment: .leading)
-                          
+                        
                         
                         Text(word.1)
                             .frame(width: 50, alignment: .leading)
@@ -61,14 +61,14 @@ struct Aussprache1: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
-                
-                
             }
-            .navigationTitle("Aussprache")
-            .navigationBarTitleDisplayMode(.inline)
+            
+            
+            
             
         }
-        
+        .navigationTitle("Aussprache")
+        .navigationBarTitleDisplayMode(.inline)
     }
     var headerView: some View {
         HStack {

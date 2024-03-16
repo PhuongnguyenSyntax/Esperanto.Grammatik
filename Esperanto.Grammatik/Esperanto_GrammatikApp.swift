@@ -11,7 +11,7 @@ import SwiftUI
 struct Esperanto_GrammatikApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }

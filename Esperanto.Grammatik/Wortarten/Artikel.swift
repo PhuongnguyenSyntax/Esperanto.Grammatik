@@ -15,12 +15,11 @@ struct Artikel: View {
             Text("La =  der, die, das. Es gibt keinen unbestimmten Artikel.")
                 .font(.system(size: 16))
                 .fontWeight(.medium)
-                .padding(.bottom, 2)
-       
         }
+        
+        .frame(maxWidth: .infinity)
         .padding()
         .background(Color.eo)
-        
         .border(Color.black, width: 2)
         .cornerRadius(5)
         .padding()

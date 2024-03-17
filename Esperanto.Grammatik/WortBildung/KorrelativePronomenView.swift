@@ -191,7 +191,29 @@ struct KorrelativePronomenView: View {
             .background(Color.nen)
             .padding(20)
             
-            Text("hallllll")
+            VStack(alignment: .leading) {
+                Text("(1) = irgendwie / auf jede Weise / auf keine Art")
+                Divider()
+                Text("(2) = Grund und Ursache")
+                Divider()
+                Text("(3) = aus irgendeinem / jedem / keinem Grund")
+                Divider()
+                Text("(4) irgendjemandes / keder,amms / niemandes")
+                Divider()
+                Text("ĉi weist auf das Näherliegende: tiu ĉi = dieser, tie ĉi = hier")
+                Divider()
+                Text("Ki-ist Fragefürwort (wie vorhin übersetzt), aber auch rückbezügliches. Fürwort. z.B. : tiu kiu ... = der, wer ..., tie kie ... = dort, wo ...")
+                Divider()
+                Text("Substantivisch gebrauchtes -u gibt Personen an (siehe vor). Es kann auch adjektivisch eingesetzt werden, fur Personen und für Sachen. Dagegen ist -o immer substantivisch")
+            }
+            .padding()
+            .background(Color.eo)
+            
+            .border(Color.black, width: 2)
+            .cornerRadius(5)
+            .padding()
+       
+            
             
          
         }

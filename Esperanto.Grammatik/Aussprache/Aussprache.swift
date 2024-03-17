@@ -51,7 +51,6 @@ struct Aussprache: View {
                 }
                 .padding()
                 .background(Color.eo)
-                
                 .border(Color.black, width: 2)
                 .cornerRadius(5)
                 .padding()

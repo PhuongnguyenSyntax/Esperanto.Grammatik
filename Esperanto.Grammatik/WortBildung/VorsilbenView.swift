@@ -25,12 +25,12 @@ struct VorsilbenView: View {
         VStack{
             VStack {
                 Text("Die Anzahl von Stämmen in Esperanto ist durch ein System von Vor- und Nachsilben, die feste Bedeutungen haben, begrenzt. durch sie kann man neue Wörter bilden, deren Bedeutung aus den verschiedenen Elementen hervorgeht.")
-                    .fontWeight(.medium)
-                    .font(.system(size: 16))
+                    .fontWeight(.semibold)
+                    .font(.system(size: 14))
                     .padding(.bottom, 2)
                 Divider()
                 Text("Bei der ersten Durschsicht dieser Grammatik müssen Sie, abgesehen von einigen Ausnahmen, nicht alle Vor- und NAchsilben m it Texte  durchlesen. die häufigsten sind fett gedruckt. Sie gehören zu den 520 meistgebrauchten Wortelementen des Esperanto.")
-                    .font(.system(size: 16))
+                    .font(.system(size: 14))
                     .padding(.bottom, 2)
             }
             .padding()

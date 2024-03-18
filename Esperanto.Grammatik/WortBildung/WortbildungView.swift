@@ -11,11 +11,12 @@ struct WortbildungView: View {
     var body: some View {
         VStack {
             Text("Esoeranto-Wörte sind Zusammensetzungen von Wortelementen. Letzter können Stämme, Endungen, Vor- und Nachsilben sein")
-                .font(.system(size: 16))
+                .font(.system(size: 14))
+                .fontWeight(.semibold)
                 .padding(.bottom, 2)
             Divider()
             Text("Beispiele: est-i (Stamm-Endung), vir-in-o-j (Stamm-Nachsilbe_Endung_Pluralendung), mal-bel-a (Vorsilbe-Stamm-Endung)")
-                .font(.system(size: 16))
+                .font(.system(size: 14))
                 .padding(.bottom, 2)
            
         }

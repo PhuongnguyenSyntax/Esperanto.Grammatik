@@ -32,10 +32,8 @@ struct Home: View {
     let satzBildung: [(String, AnyView)] = [
         ("Fragesätze", AnyView(Frage())),
         ("Wortfolge", AnyView(Wortfolge()))
-        
-    ]
-    
-    @State private var searchText = ""
+   ]
+  
     var body: some View {
         NavigationStack {
             List {
@@ -48,7 +46,7 @@ struct Home: View {
                 .listRowBackground(Color.eo)
                 
                 Section(header: Text("Wortbildung").font(.system(size: 14))) {
-                    ForEach(wortBildung.filter { searchText.isEmpty || $0.0.localizedStandardContains(searchText) }, id: \.0) { item in
+                    ForEach(wortBildung, id: \.0) { item in
                         NavigationLink(destination: item.1) {
                             Text(item.0)
                                 .font(.system(size: 14))
@@ -58,33 +56,29 @@ struct Home: View {
                 .listRowBackground(Color.eo)
                 
                 Section(header: Text("Wortarten").font(.system(size: 14))) {
-                    ForEach(wortArten.filter { searchText.isEmpty || $0.0.localizedStandardContains(searchText) }, id:\.0) { item in
+                    ForEach(wortArten, id:\.0) { item in
                         NavigationLink(destination: item.1) {
                             Text(item.0)
                                 .font(.system(size: 14))
                         }
-                        
                     }
                 }
                 .listRowBackground(Color.eo)
                 
                 Section(header: Text("Satzbildung").font(.system(size: 14))) {
-                    ForEach(satzBildung.filter { searchText.isEmpty || $0.0.localizedStandardContains(searchText) }, id:\.0) { item in
+                    ForEach(satzBildung, id:\.0) { item in
                         NavigationLink(destination: item.1) {
                             Text(item.0)
                                 .font(.system(size: 14))
                         }
-                        
                     }
                 }
                 .listRowBackground(Color.eo)
             }
-            
+          
             .navigationTitle("Esperanto Grammatik")
             .navigationBarTitleDisplayMode(.inline)
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always)) {
-                Text("Search").foregroundColor(.gray)
-            }
+           
         }
     }
 }

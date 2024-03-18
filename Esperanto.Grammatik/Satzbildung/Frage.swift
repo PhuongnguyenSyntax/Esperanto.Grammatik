@@ -11,19 +11,18 @@ struct Frage: View {
     var body: some View {
         VStack {
             Text("Die meinsten Punkte der Satzbildung sind schon erwähnt worden. Hier sind noch einige Ergänzungen:")
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .font(.system(size: 16))
+                .fontWeight(.semibold)
+                .font(.system(size: 14))
                 .padding(.bottom, 2)
             Divider()
             Text("Alle Fragen, die mit ja oder nein beantwortet werden können, beginnen  mit dem Partikel ĉu. Alle anderen Fragen werden durch Fragenfürwörter eingeleitet: kiu, kio, kia...")
-                .fontWeight(.medium)
-                .font(.system(size: 16))
+                .fontWeight(.semibold)
+                .font(.system(size: 14))
                 .padding(.bottom, 2)
           
         }
         .padding()
         .background(Color.eo)
-        
         .border(Color.black, width: 2)
         .cornerRadius(5)
         .padding()

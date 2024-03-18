@@ -13,7 +13,7 @@ struct Artikel: View {
     var body: some View {
         VStack {
             Text("La =  der, die, das. Es gibt keinen unbestimmten Artikel.")
-                .font(.system(size: 16))
+                .font(.system(size: 14))
                 .fontWeight(.medium)
         }
         

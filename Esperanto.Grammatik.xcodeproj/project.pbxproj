@@ -31,9 +31,6 @@
 		62D87E812BA100F2000AFB5F /* Frage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E802BA100F2000AFB5F /* Frage.swift */; };
 		62D87E832BA100FF000AFB5F /* Wortfolge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E822BA100FF000AFB5F /* Wortfolge.swift */; };
 		62D87E852BA103F0000AFB5F /* Zahlwort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E842BA103F0000AFB5F /* Zahlwort.swift */; };
-		62D87E872BA261F9000AFB5F /* testUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E862BA261F9000AFB5F /* testUI.swift */; };
-		62D87E892BA307FD000AFB5F /* testUI2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E882BA307FD000AFB5F /* testUI2.swift */; };
-		62D87E8B2BA4FCC6000AFB5F /* testUI3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D87E8A2BA4FCC6000AFB5F /* testUI3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,9 +78,6 @@
 		62D87E802BA100F2000AFB5F /* Frage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frage.swift; sourceTree = "<group>"; };
 		62D87E822BA100FF000AFB5F /* Wortfolge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wortfolge.swift; sourceTree = "<group>"; };
 		62D87E842BA103F0000AFB5F /* Zahlwort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zahlwort.swift; sourceTree = "<group>"; };
-		62D87E862BA261F9000AFB5F /* testUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUI.swift; sourceTree = "<group>"; };
-		62D87E882BA307FD000AFB5F /* testUI2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUI2.swift; sourceTree = "<group>"; };
-		62D87E8A2BA4FCC6000AFB5F /* testUI3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUI3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,9 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				62D87E6B2BA0FFCC000AFB5F /* Aussprache.swift */,
-				62D87E882BA307FD000AFB5F /* testUI2.swift */,
-				62D87E8A2BA4FCC6000AFB5F /* testUI3.swift */,
-				62D87E862BA261F9000AFB5F /* testUI.swift */,
 			);
 			path = Aussprache;
 			sourceTree = "<group>";
@@ -350,21 +341,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D87E852BA103F0000AFB5F /* Zahlwort.swift in Sources */,
-				62D87E872BA261F9000AFB5F /* testUI.swift in Sources */,
 				62D87E5C2BA0FC33000AFB5F /* WortbildungView.swift in Sources */,
 				62D87E6C2BA0FFCC000AFB5F /* Aussprache.swift in Sources */,
 				62D87E7B2BA100B5000AFB5F /* Präpositionen.swift in Sources */,
 				62D87E752BA10087000AFB5F /* Pronomina.swift in Sources */,
 				62D87E772BA10093000AFB5F /* Verben.swift in Sources */,
 				62D87E652BA0FCBA000AFB5F /* KorrelativePronomenView.swift in Sources */,
-				62D87E892BA307FD000AFB5F /* testUI2.swift in Sources */,
 				62D87E612BA0FC8E000AFB5F /* VorsilbenView.swift in Sources */,
 				62D87E812BA100F2000AFB5F /* Frage.swift in Sources */,
 				62D87E672BA0FD03000AFB5F /* ZusammengesetzteView.swift in Sources */,
 				62D87E712BA1006C000AFB5F /* SubtantiveUndAdjektive.swift in Sources */,
 				62D87E322BA0F367000AFB5F /* ContentView.swift in Sources */,
 				62D87E6F2BA10052000AFB5F /* Artikel.swift in Sources */,
-				62D87E8B2BA4FCC6000AFB5F /* testUI3.swift in Sources */,
 				62D87E7D2BA100C5000AFB5F /* Konjunktionen.swift in Sources */,
 				62D87E5A2BA0F3A0000AFB5F /* Home.swift in Sources */,
 				62D87E832BA100FF000AFB5F /* Wortfolge.swift in Sources */,

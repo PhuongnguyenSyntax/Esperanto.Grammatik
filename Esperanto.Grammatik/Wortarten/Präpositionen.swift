@@ -8,52 +8,85 @@
 import SwiftUI
 
 struct Praepositionen: View {
-    
-        let words = [
-            ("die Zeitung", "die Zeitungen"),
-            ("die Blume", "die Blumen"),
-            
-        ]
+    let preposition = [
+        "Die wichtigsten Präpositionen sind:",
+        "al",
+        "anstataŭ",
+        "antaŭ",
+        "apud",
+        "ĉe",
+        "ĉirkaŭ",
+        "da",
+        "de",
+        "dum",
+        "ekster",
+        "el",
+        "en",
+        "ĝis",
+        "inter",
+        "je",
+        "kontraŭ",
+        "krom",
+        "kun",
+        "laŭ",
+        "malantaŭ",
+        "malgraŭ",
+        "per",
+        "po",
+        "por",
+        "post",
+        "preter",
+        "pri",
+        "pro",
+        "sen",
+        "sub",
+        "super",
+        "sur",
+        "tra",
+        "trans",
+    ]
+        
         
         var body: some View {
-            List {
-                // The section for the rules
-                Section(header: Text("Ending \"-n\" or \"-en\" (without umlaut)")) {
-                    VStack(alignment: .leading) {
-                        ForEach([
-                            "Most feminine nouns.",
-                            "Adopted foreign nouns, feminine nouns with the endings -anz, -enz, -ie, -ek, -ik, -ion, -ur, -tät and a lot of neuter nouns with the ending -um.",
-                            "Masculine foreign nouns with endings -ant, -ent, -ist.",
-                            "A lot of adopted foreign words with the ending -or."
-                            // Add more rules here...
-                        ], id: \.self) { rule in
-                            Text(rule)
-                        }
-                    }
+            ScrollView {
+                VStack {
+                    Text("Nach Präpositonen folgt der Nominativ. Man kann sie in bestimmeten Fällen durch den Akkusativ ersetzen. Das -n nach Präpositionen ersetzt 'al' und gibt so die Richtung an.")
+                        .font(.system(size: 14))
+                        .fontWeight(.semibold)
+                        .padding(.bottom, 2)
+                    Divider()
+                    Text("Beispiele: en la domo = in dem Haus, en la domon = (al en la domo) = in das Haus, la dekkvinan de decembro (= en la dekkvina de decembro)")
+                        .font(.system(size: 14))
+                        .padding(.bottom, 2)
+                    Divider()
+                    Text("Die meisten Präpositionen haben eine oder mehrere Bedeutung(en). Ist aber aus dem Sinn des Satzes nicht ersichtlich, welche Präposition anzuwenden ist, so wird die Präposition je gebraucht, die keine selbständige Bedeutung hat, z.B.: je via sano = Gesundheit!, esti kapabla je ĉio = zu allem fähig sein")
+                        .fontWeight(.semibold)
+                        .font(.system(size: 14))
+                        .padding(.bottom,2)
                 }
+                .padding()
+                .background(Color.eo)
+                .border(Color.black, width: 2)
+                .cornerRadius(5)
+                .padding()
                 
-                // The section for the word table
-                Section {
-                    ForEach(words, id: \.0) { word in
-                        HStack {
-                            Text(word.0) // Singular form
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            Text(word.1) // Plural form
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
+                VStack {
+                    ForEach(preposition, id: \.self) { item in
+                        Text(item)
+                            .font(.system(size: 14))
+                        Divider()
                     }
-                } header: {
-                    HStack {
-                        Text("singular").bold()
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        Text("plural").bold()
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                    .background(Color.yellow) 
                 }
+                .padding(.leading)
+                .padding()
+                .background(Color.nen)
+                .border(Color.black, width: 2)
+                .padding()
+                
+                
             }
-            .navigationTitle("Plural")
-            .listStyle(GroupedListStyle())
+            .navigationTitle("Präpositionen")
+            .navigationBarTitleDisplayMode(.inline)
         }
 }
 

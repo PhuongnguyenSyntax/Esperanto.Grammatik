@@ -44,23 +44,29 @@ struct Adverbien: View {
         ScrollView {
             VStack {
                 Text("Das Adverb endet auf -e")
+                    .font(.system(size: 14))
+                    .fontWeight(.semibold)
                 Divider()
                 Text("Währen sich ein Adjektiv auf ein Substantiv bezieht, steht ein Adverb in Verbindung mit einem Adjektiv, Verb oder einem anderen Adverb.")
+                    .font(.system(size: 14))
             }
             .padding()
             .background(Color.eo)
             .border(Color.black, width: 2)
             .cornerRadius(5)
             .padding()
+            
             VStack {
                 ForEach(adverbs, id: \.self) { adverb in
                     Text(adverb)
+                        .font(.system(size: 14))
                     Divider()
                 }
             }
             .padding(.leading)
-            .background(Color.nen) // Màu nền xanh
-            .border(Color.black, width: 2) // Đường viền đen, độ dày 2dp
+            .padding()
+            .background(Color.nen)
+            .border(Color.black, width: 2)
             .padding()
           }
         .navigationTitle("Adverbien")

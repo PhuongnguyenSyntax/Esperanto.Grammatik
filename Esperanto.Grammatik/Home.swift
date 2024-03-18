@@ -35,52 +35,54 @@ struct Home: View {
         
     ]
     
+    @State private var searchText = ""
     var body: some View {
         NavigationStack {
             List {
-                Section(header: Text("Aussprache")) {
+                Section(header: Text("Aussprache").font(.system(size: 14))) {
                     NavigationLink(destination: Aussprache()) {
                         Text("Aussprache")
+                            .font(.system(size: 14))
                     }
                 }
                 .listRowBackground(Color.eo)
                 
-                Section(header: Text("Wortbildung")) {
-                    ForEach(wortBildung, id: \.0) { item in
+                Section(header: Text("Wortbildung").font(.system(size: 14))) {
+                    ForEach(wortBildung.filter { searchText.isEmpty || $0.0.localizedStandardContains(searchText) }, id: \.0) { item in
                         NavigationLink(destination: item.1) {
                             Text(item.0)
+                                .font(.system(size: 14))
                         }
                     }
                 }
                 .listRowBackground(Color.eo)
                 
-                Section(header: Text("Wortarten")) {
-                    ForEach(wortArten, id:\.0) { item in
+                Section(header: Text("Wortarten").font(.system(size: 14))) {
+                    ForEach(wortArten.filter { searchText.isEmpty || $0.0.localizedStandardContains(searchText) }, id:\.0) { item in
                         NavigationLink(destination: item.1) {
                             Text(item.0)
+                                .font(.system(size: 14))
                         }
                         
                     }
                 }
                 .listRowBackground(Color.eo)
                 
-                Section(header: Text("Satzbildung")) {
-                    ForEach(satzBildung, id:\.0) { item in
+                Section(header: Text("Satzbildung").font(.system(size: 14))) {
+                    ForEach(satzBildung.filter { searchText.isEmpty || $0.0.localizedStandardContains(searchText) }, id:\.0) { item in
                         NavigationLink(destination: item.1) {
                             Text(item.0)
+                                .font(.system(size: 14))
                         }
                         
                     }
                 }
                 .listRowBackground(Color.eo)
             }
-          
+            
             .navigationTitle("Esperanto Grammatik")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                Image(systemName: "gear")
-            }
-            .searchable(text: .constant(""), placement: .navigationBarDrawer(displayMode: .always)) {
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always)) {
                 Text("Search").foregroundColor(.gray)
             }
         }

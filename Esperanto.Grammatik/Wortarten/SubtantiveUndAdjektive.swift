@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SubtantiveUndAdjektive: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Das Substantiv endet auf -O. Das Adjektiv endet auf -a.")
                 .font(.system(size: 14))
             Divider()

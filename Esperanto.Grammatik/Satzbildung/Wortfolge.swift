@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Wortfolge: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading)  {
             Text("Die Wortfolge in Esperanto ist freier als in anderen Sprachen. So kann man das Adjektiv vor oder nach dem Substantiv setzen, das Verb vorne oder hinten im Satz.")
                 .font(.system(size: 14))
                 .fontWeight(.semibold)

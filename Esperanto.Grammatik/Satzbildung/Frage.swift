@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Frage: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Die meinsten Punkte der Satzbildung sind schon erwähnt worden. Hier sind noch einige Ergänzungen:")
                 .fontWeight(.semibold)
                 .font(.system(size: 14))

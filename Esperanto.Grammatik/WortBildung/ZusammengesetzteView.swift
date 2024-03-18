@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ZusammengesetzteView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading)  {
             Text("So wie im Deutschen, Griechischen, Ungarischen u.a (aber z.B nicht im Fränzösischen) darf man mehrere Stämme in einem Wort zusammensetzen. Der letze Stamm ist das Grundwort (Hauptbedeutung).")
                 .fontWeight(.semibold)
                 .font(.system(size: 14))

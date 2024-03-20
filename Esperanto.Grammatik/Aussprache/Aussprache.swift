@@ -78,15 +78,16 @@ struct Aussprache: View {
                 ForEach(words) { word in
                     HStack {
                         Text(word.column1)
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                             .frame(width: 50)
+                          
                         Spacer()
                         Text(word.column2)
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                             .frame(width: 60)
                         Spacer()
                         Text(word.column3)
-                            .font(.system(size: 12))
+                            .font(.system(size: 14))
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .overlay { Rectangle().stroke() }

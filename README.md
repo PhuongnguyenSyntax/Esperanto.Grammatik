@@ -14,4 +14,6 @@ Detaillierte Erläuterungen: Verstehen Sie die Feinheiten der Esperanto-Grammati
 
 Benutzerfreundliches Design: Navigieren Sie einfach durch die verschiedenen Inhalte. <br>
 Lernen im eigenen Tempo: Nutzen Sie die Flexibilität, zu lernen, wann und wo Sie wollen.<br>
-
+![anh1](https://github.com/PhuongnguyenSyntax/Esperanto.Grammatik/blob/main/eo1.png)
+![anh2](https://github.com/PhuongnguyenSyntax/Esperanto.Grammatik/blob/main/eo2.png)
+![anh3](https://github.com/PhuongnguyenSyntax/Esperanto.Grammatik/blob/main/eo3.png)
